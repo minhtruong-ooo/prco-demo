@@ -594,3 +594,24 @@ footer .footer-top .flex-col {
 .footer-bottom {
   margin-top: 50px;
 }
+
+.ani-1 {
+  animation: fadeInUp;
+  animation-duration: 1s; 
+}
+.ani-2 {
+  animation: fadeInUp;
+  animation-duration: 1.5s; 
+}
+.ani-3 {
+  animation: fadeInUp;
+  animation-duration: 2s; 
+}
+.ani-4 {
+  animation: fadeInUp;
+  animation-duration: 2s; 
+}
+.ani-5 {
+  animation: fadeInLeft;
+  animation-duration: 2s; 
+}
