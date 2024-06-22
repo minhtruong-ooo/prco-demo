@@ -626,7 +626,7 @@ footer .footer-top .flex-col {
   bottom: 0;
   z-index: 2000;
   opacity: 0;
-  background: #000000 url(./assets/img/logoIMPC.png) no-repeat center center;
+  background: #c8c8c8 url(./assets/img/logoIMPC.png) no-repeat center center;
   background-size: 260px auto;
   -moz-transition: opacity 0.6s ease;
   -o-transition: opacity 0.6s ease;

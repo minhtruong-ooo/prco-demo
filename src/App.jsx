@@ -576,7 +576,7 @@ function App() {
                 </div>
               </div>
               <div className="footer-bottom flex-list flex-box flex-justify-between">
-                <span>© 2024 PRCO. All rights reserved</span>
+                <span>© 2024 IMPC. All rights reserved</span>
                 <span>Created at Minh</span>
               </div>
             </div>
