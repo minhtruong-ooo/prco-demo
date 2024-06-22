@@ -10,19 +10,17 @@ export default function LoadingSite() {
       setFade(true);
     }, 100);
 
-    // Thêm class show sau 2 giây
     const showTimeout = setTimeout(() => {
       setShow(true);
-    }, 100);
-
-    const removeTimeoutFade = setTimeout(() => {
-      setFade(false);
-    }, 2600);
-
+    }, 500);
+    
     const removeTimeoutShow = setTimeout(() => {
       setShow(false);
     }, 2000);
-
+    
+    const removeTimeoutFade = setTimeout(() => {
+      setFade(false);
+    }, 2600);
 
     // Cleanup function
     return () => {

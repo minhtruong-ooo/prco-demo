@@ -15,10 +15,9 @@ function App() {
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    // Giả lập thời gian tải trang
     const timer = setTimeout(() => {
       setIsLoading(false);
-    }, 3000); // Tải trang trong 3 giây
+    }, 3000);
 
     return () => clearTimeout(timer);
   }, []);
