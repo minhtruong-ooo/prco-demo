@@ -615,3 +615,49 @@ footer .footer-top .flex-col {
   animation: fadeInLeft;
   animation-duration: 2s; 
 }
+
+
+
+.page-loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 2000;
+  opacity: 0;
+  background: #000000 url(./assets/img/logoIMPC.png) no-repeat center center;
+  background-size: 260px auto;
+  -moz-transition: opacity 0.6s ease;
+  -o-transition: opacity 0.6s ease;
+  -ms-transition: opacity 0.6s ease;
+  -webkit-transition: opacity 0.6s ease;
+  transition: opacity 0.6s ease
+}
+
+.page-loader .page-wipe {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 2001;
+  background: #fff;
+  -moz-transition: all 1.1s cubic-bezier(0.83, 0, 0.17, 1);
+  -o-transition: all 1.1s cubic-bezier(0.83, 0, 0.17, 1);
+  -ms-transition: all 1.1s cubic-bezier(0.83, 0, 0.17, 1);
+  -webkit-transition: all 1.1s cubic-bezier(0.83, 0, 0.17, 1);
+  transition: all 1.1s cubic-bezier(0.83, 0, 0.17, 1)
+}
+
+.page-loader.fade {
+  opacity: 1
+}
+
+.show {
+  display: block !important
+}
+
+.page-loader.show .page-wipe {
+  top: 100%
+}
