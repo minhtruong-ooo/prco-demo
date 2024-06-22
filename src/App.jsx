@@ -5,7 +5,7 @@ import img2 from "./assets/img/3e2b0acffa3d955d91a036763ef350a3_9a32c3a529.jpg";
 import img3 from "./assets/img/BWID_Hai_Phong_Lot_11_A_2d6ed9c80c.jpg";
 import img4 from "./assets/img/DEEP_C1_Nam_Dinh_Vu_cbcff19614.jpg";
 import img5 from "./assets/img/DEEP_C2_Nam_Dinh_Vu_Cat_Hai_c34304de4d.jpg";
-import '../node_modules/animate.css/animate.min.css';
+import "../node_modules/animate.css/animate.min.css";
 
 import { useInView } from "react-intersection-observer";
 import { useState } from "react";
@@ -23,15 +23,14 @@ function App() {
   const [isVisible9, setIsVisible9] = useState(false);
   const [isVisible10, setIsVisible10] = useState(false);
 
-
   const { ref: ref1, inView: inView1 } = useInView({
     triggerOnce: true,
-    threshold: 0.8, 
+    threshold: 0.8,
     onChange: (inView) => {
       if (inView) {
         setIsVisible1(true);
       }
-  }
+    },
   });
 
   const { ref: ref2, inView: inView2 } = useInView({
@@ -41,73 +40,73 @@ function App() {
       if (inView) {
         setIsVisible2(true);
       }
-    }
+    },
   });
 
   const { ref: ref3, inView: inView3 } = useInView({
     triggerOnce: true,
-    threshold: 1, 
+    threshold: 0.8,
     onChange: (inView) => {
       if (inView) {
         setIsVisible3(true);
       }
-  }
+    },
   });
 
   const { ref: ref4, inView: inView4 } = useInView({
     triggerOnce: true,
-    threshold: 1,
+    threshold: 0.8,
     onChange: (inView) => {
       if (inView) {
         setIsVisible4(true);
       }
-    }
+    },
   });
 
   const { ref: ref5, inView: inView5 } = useInView({
     triggerOnce: true,
-    threshold: 1, 
+    threshold: 0.8,
     onChange: (inView) => {
       if (inView) {
         setIsVisible5(true);
       }
-  }
+    },
   });
   const { ref: ref7, inView: inView7 } = useInView({
     triggerOnce: true,
-    threshold: 1,
+    threshold: 0.8,
     onChange: (inView) => {
       if (inView) {
         setIsVisible7(true);
       }
-    }
+    },
   });
   const { ref: ref8, inView: inView8 } = useInView({
     triggerOnce: true,
-    threshold: 1,
+    threshold: 0.8,
     onChange: (inView) => {
       if (inView) {
         setIsVisible8(true);
       }
-    }
+    },
   });
   const { ref: ref9, inView: inView9 } = useInView({
     triggerOnce: true,
-    threshold: 1,
+    threshold: 0.8,
     onChange: (inView) => {
       if (inView) {
         setIsVisible9(true);
       }
-    }
+    },
   });
   const { ref: ref10, inView: inView10 } = useInView({
     triggerOnce: true,
-    threshold: 1,
+    threshold: 0.8,
     onChange: (inView) => {
       if (inView) {
         setIsVisible10(true);
       }
-    }
+    },
   });
 
   return (
@@ -184,7 +183,7 @@ function App() {
                 In The Field Of Industrial Real Estate Development And
                 Management
               </h1>
-              <a href="#" className="button-link animate__animated ani-5" >
+              <a href="#" className="button-link animate__animated ani-5">
                 {" "}
                 Find out more
                 <span>
@@ -208,211 +207,13 @@ function App() {
           <div className="grid-container">
             <div ref={ref1} className="grid-item grid-item--1 flex">
               {isVisible1 && (
-                <a href="#" className={`text animate__animated ${inView1 ? 'animate__fadeInUp' : ''}`}>
-                <h2>Clients</h2>
-                <div className="text-button">
-                  <span>Take a look</span>
-                  <span>
-                    <svg
-                      class="icon"
-                      width="22"
-                      height="12"
-                      viewBox="0 0 22 12"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path d="M0 6L21 6" stroke="currentColor"></path>
-                      <path d="M16 1L21 6L16 11" stroke="currentColor"></path>
-                    </svg>
-                  </span>
-                </div>
-              </a>
-              )}
-              
-              <div className="image">
-                <div className="video-mask">
-                  <iframe
-                    width="640"
-                    height="320"
-                    style={{ height: "auto", width: "9999px" }}
-                    src="https://player.vimeo.com/video/414717145?background=1"
-                  ></iframe>
-                </div>
-              </div>
-            </div>
-            <div className="grid-item grid-item--2 flex" ref={ref2}>
-              {isVisible2 && (
-                <a href="#" className={`text animate__animated ${inView2 ? 'animate__fadeInUp' : ''}`}>
-                <h2>Our services</h2>
-                <div className="text-button">
-                  <span>Find out more</span>
-                  <span>
-                    <svg
-                      class="icon"
-                      width="22"
-                      height="12"
-                      viewBox="0 0 22 12"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path d="M0 6L21 6" stroke="currentColor"></path>
-                      <path d="M16 1L21 6L16 11" stroke="currentColor"></path>
-                    </svg>
-                  </span>
-                </div>
-              </a>
-              )}
-              
-              <div className="image">
-                <div className="video-mask">
-                  <img
-                    style={{ width: "100%", height: "100%" }}
-                    src={img}
-                  ></img>
-                </div>
-              </div>
-            </div>
-            <div className="grid-item grid-item--3 flex" ref={ref3}>
-              {isVisible3 && (
-                <h3 className={`text animate__animated ${inView3 ? 'animate__fadeInUp' : ''}`}>
-                Over 25 year experience and a proven track record.
-              </h3>
-              )}
-              
-            </div>
-          </div>
-        </div>
-        <div className="block block-2">
-          <div className="grid-container">
-            <div className="grid-item grid-item--1 flex" ref={ref4}>
-              {isVisible4 && (
-                <h3 className={`text-brand animate__animated ${inView4 ? 'animate__fadeInUp' : ''}`}>VSIP I</h3>
-              )}
-              <div className="image image-color">
-                <img src={img1} alt="" />
-              </div>
-            </div>
-            <div className="grid-item grid-item--2 flex" ref={ref5}>
-            {isVisible5 && (
-                <h3 className={`text-brand animate__animated ${inView5 ? 'animate__fadeInUp' : ''}`}>VSIP II</h3>
-              )}
-              <div className="image image-color">
-                <img src={img2} alt="" />
-              </div>
-            </div>
-            <div className="grid-item grid-item--3 flex" ref={ref7}>
-            {isVisible7 && (
-                <h3 className={`text-brand animate__animated ${inView7 ? 'animate__fadeInUp' : ''}`}>VSIP III</h3>
-              )}
-              <div className="image image-color">
-                <img src={img3} alt="" />
-              </div>
-            </div>
-            <div className="grid-item grid-item--4 flex" ref={ref7}>
-            {isVisible7 && (
-                <h3 className={`text-brand animate__animated ${inView7 ? 'animate__fadeInUp' : ''}`}>VSIP IV</h3>
-              )}
-              <div className="image image-color">
-                <img src={img4} alt="" />
-              </div>
-            </div>
-            <div className="grid-item grid-item--4 flex" ref={ref8}>
-            {isVisible8 && (
-                <h3 className={`text-brand animate__animated ${inView8 ? 'animate__fadeInUp' : ''}`}>VSIP V</h3>
-              )}
-              <div className="image image-color">
-                <img src={img5} alt="" />
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="block block-3">
-          <div className="flex-box">
-            <div className="box-1 flex-box flex-col flex-justify-end flex-column">
-              <div className="post-list">
-                <a href="#">
-                  <span>22 May 2024</span>
-                  <h3>BOATSY appoints PRCO Group</h3>
-                </a>
-                <a href="#">
-                  <span>22 May 2024</span>
-                  <h3>BOATSY appoints PRCO Group</h3>
-                </a>
-                <a href="#">
-                  <span>22 May 2024</span>
-                  <h3>BOATSY appoints PRCO Group</h3>
-                </a>
-              </div>
-            </div>
-            <div className="box-2 flex-col" >
-              <div className="news-image flex-box flex-column flex-justify-end">
-              <a href="#" className={`text-news animate__animated ${inView9 ? 'animate__fadeInUp' : ''}`}>
-                  <h2>Our news</h2>
-                  <div className="text-button">
-                    <span>View all</span>
-                    <span>
-                      <svg
-                        class="icon"
-                        width="22"
-                        height="12"
-                        viewBox="0 0 22 12"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path d="M0 6L21 6" stroke="currentColor"></path>
-                        <path d="M16 1L21 6L16 11" stroke="currentColor"></path>
-                      </svg>
-                    </span>
-                  </div>
-                </a>
-                
-                <div className="image-news">
-                  <div className="video-mask">
-                    <img className="img" src={img2}></img>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="block readmore-widget">
-          <div className="flex-box">
-            <div className="box-3 flex-col" ref={ref10}>
-              <div className="flex-box flex-column flex-justify-end">
-                {isVisible10 && (
-                  <a href="#" className={`text-news animate__animated ${inView10 ? 'animate__fadeInUp' : ''}`}>
-                  <h2>Why IMPC</h2>
-                  <div className="text-button">
-                    <span>How we can help</span>
-                    <span>
-                      <svg
-                        class="icon"
-                        width="22"
-                        height="12"
-                        viewBox="0 0 22 12"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path d="M0 6L21 6" stroke="currentColor"></path>
-                        <path d="M16 1L21 6L16 11" stroke="currentColor"></path>
-                      </svg>
-                    </span>
-                  </div>
-                </a>
-                )}
-                
-                <div className="image-news">
-                  <div className="video-mask">
-                    <img className="img" src={img3}></img>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="box-3 flex-col" ref={ref10}>
-              <div className="flex-box flex-column flex-justify-end">
-                {isVisible10 && (
-                  <a href="#" className={`text-news animate__animated ${inView10 ? 'animate__fadeInUp' : ''}`}>
-                  <h2>Our offices</h2>
+                <a
+                  href="#"
+                  className={`text animate__animated ${
+                    inView1 ? "animate__fadeInUp" : ""
+                  }`}
+                >
+                  <h2>Clients</h2>
                   <div className="text-button">
                     <span>Take a look</span>
                     <span>
@@ -430,8 +231,275 @@ function App() {
                     </span>
                   </div>
                 </a>
-                ) }
-                
+              )}
+
+              <div className="image">
+                <div className="video-mask">
+                  <iframe
+                    width="640"
+                    height="320"
+                    style={{ height: "auto", width: "9999px" }}
+                    src="https://player.vimeo.com/video/414717145?background=1"
+                  ></iframe>
+                </div>
+              </div>
+            </div>
+            <div className="grid-item grid-item--2 flex" ref={ref2}>
+              {isVisible2 && (
+                <a
+                  href="#"
+                  className={`text animate__animated ${
+                    inView2 ? "animate__fadeInUp" : ""
+                  }`}
+                >
+                  <h2>Our services</h2>
+                  <div className="text-button">
+                    <span>Find out more</span>
+                    <span>
+                      <svg
+                        class="icon"
+                        width="22"
+                        height="12"
+                        viewBox="0 0 22 12"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path d="M0 6L21 6" stroke="currentColor"></path>
+                        <path d="M16 1L21 6L16 11" stroke="currentColor"></path>
+                      </svg>
+                    </span>
+                  </div>
+                </a>
+              )}
+
+              <div className="image">
+                <div className="video-mask">
+                  <img
+                    style={{ width: "100%", height: "100%" }}
+                    src={img}
+                  ></img>
+                </div>
+              </div>
+            </div>
+            <div className="grid-item grid-item--3 flex" ref={ref3}>
+              {isVisible3 && (
+                <h3
+                  className={`text animate__animated ${
+                    inView3 ? "animate__fadeInUp" : ""
+                  }`}
+                >
+                  Over 25 year experience and a proven track record.
+                </h3>
+              )}
+            </div>
+          </div>
+        </div>
+        <div className="block block-2">
+          <div className="grid-container">
+            <div className="grid-item grid-item--1 flex" ref={ref4}>
+              {isVisible4 && (
+                <h3
+                  className={`text-brand animate__animated ${
+                    inView4 ? "animate__fadeInUp" : ""
+                  }`}
+                >
+                  VSIP I
+                </h3>
+              )}
+              <div className="image image-color">
+                <img src={img1} alt="" />
+              </div>
+            </div>
+            <div className="grid-item grid-item--2 flex" ref={ref5}>
+              {isVisible5 && (
+                <h3
+                  className={`text-brand animate__animated ${
+                    inView5 ? "animate__fadeInUp" : ""
+                  }`}
+                >
+                  VSIP II
+                </h3>
+              )}
+              <div className="image image-color">
+                <img src={img2} alt="" />
+              </div>
+            </div>
+            <div className="grid-item grid-item--3 flex" ref={ref7}>
+              {isVisible7 && (
+                <h3
+                  className={`text-brand animate__animated ${
+                    inView7 ? "animate__fadeInUp" : ""
+                  }`}
+                >
+                  VSIP III
+                </h3>
+              )}
+              <div className="image image-color">
+                <img src={img3} alt="" />
+              </div>
+            </div>
+            <div className="grid-item grid-item--4 flex" ref={ref7}>
+              {isVisible7 && (
+                <h3
+                  className={`text-brand animate__animated ${
+                    inView7 ? "animate__fadeInUp" : ""
+                  }`}
+                >
+                  VSIP IV
+                </h3>
+              )}
+              <div className="image image-color">
+                <img src={img4} alt="" />
+              </div>
+            </div>
+            <div className="grid-item grid-item--4 flex" ref={ref8}>
+              {isVisible8 && (
+                <h3
+                  className={`text-brand animate__animated ${
+                    inView8 ? "animate__fadeInUp" : ""
+                  }`}
+                >
+                  VSIP V
+                </h3>
+              )}
+              <div className="image image-color">
+                <img src={img5} alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="block block-3">
+          <div className="flex-box" >
+            <div className="box-1 flex-box flex-col flex-justify-end flex-column">
+              <div className="post-list">
+                <a href="#">
+                  <span>22 May 2024</span>
+                  <h3>BOATSY appoints PRCO Group</h3>
+                </a>
+                <a href="#">
+                  <span>22 May 2024</span>
+                  <h3>BOATSY appoints PRCO Group</h3>
+                </a>
+                <a href="#">
+                  <span>22 May 2024</span>
+                  <h3>BOATSY appoints PRCO Group</h3>
+                </a>
+              </div>
+            </div>
+            <div className="box-2 flex-col"  ref={ref9}>
+              <div className="news-image flex-box flex-column flex-justify-end">
+                {isVisible9 && (
+                  <a
+                    href="#"
+                    className={`text-news animate__animated ${
+                      inView9 ? "animate__fadeInUp" : ""
+                    }`}
+                  >
+                    <h2>Our news</h2>
+                    <div className="text-button">
+                      <span>View all</span>
+                      <span>
+                        <svg
+                          class="icon"
+                          width="22"
+                          height="12"
+                          viewBox="0 0 22 12"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path d="M0 6L21 6" stroke="currentColor"></path>
+                          <path
+                            d="M16 1L21 6L16 11"
+                            stroke="currentColor"
+                          ></path>
+                        </svg>
+                      </span>
+                    </div>
+                  </a>
+                )}
+
+                <div className="image-news">
+                  <div className="video-mask">
+                    <img className="img" src={img2}></img>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="block readmore-widget">
+          <div className="flex-box">
+            <div className="box-3 flex-col" ref={ref10}>
+              <div className="flex-box flex-column flex-justify-end">
+                {isVisible10 && (
+                  <a
+                    href="#"
+                    className={`text-news animate__animated ${
+                      inView10 ? "animate__fadeInUp" : ""
+                    }`}
+                  >
+                    <h2>Why IMPC</h2>
+                    <div className="text-button">
+                      <span>How we can help</span>
+                      <span>
+                        <svg
+                          class="icon"
+                          width="22"
+                          height="12"
+                          viewBox="0 0 22 12"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path d="M0 6L21 6" stroke="currentColor"></path>
+                          <path
+                            d="M16 1L21 6L16 11"
+                            stroke="currentColor"
+                          ></path>
+                        </svg>
+                      </span>
+                    </div>
+                  </a>
+                )}
+
+                <div className="image-news">
+                  <div className="video-mask">
+                    <img className="img" src={img3}></img>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="box-3 flex-col" ref={ref10}>
+              <div className="flex-box flex-column flex-justify-end">
+                {isVisible10 && (
+                  <a
+                    href="#"
+                    className={`text-news animate__animated ${
+                      inView10 ? "animate__fadeInUp" : ""
+                    }`}
+                  >
+                    <h2>Our offices</h2>
+                    <div className="text-button">
+                      <span>Take a look</span>
+                      <span>
+                        <svg
+                          class="icon"
+                          width="22"
+                          height="12"
+                          viewBox="0 0 22 12"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path d="M0 6L21 6" stroke="currentColor"></path>
+                          <path
+                            d="M16 1L21 6L16 11"
+                            stroke="currentColor"
+                          ></path>
+                        </svg>
+                      </span>
+                    </div>
+                  </a>
+                )}
+
                 <div className="image-news">
                   <div className="video-mask">
                     <img className="img" src={img4}></img>
@@ -472,26 +540,17 @@ function App() {
                 <nav>
                   <ul className="flex-column">
                     <li class="">
-                      <a
-                        rel="privacy-policy"
-                        href="#"
-                      >
+                      <a rel="privacy-policy" href="#">
                         Privacy Policy
                       </a>
                     </li>
                     <li class="">
-                      <a
-                        rel="privacy-policy"
-                        href="#"
-                      >
+                      <a rel="privacy-policy" href="#">
                         Cookie Policy
                       </a>
                     </li>
                     <li class="">
-                      <a
-                        rel="privacy-policy"
-                        href="#"
-                      >
+                      <a rel="privacy-policy" href="#">
                         Turms & Conditions
                       </a>
                     </li>
