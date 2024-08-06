@@ -531,15 +531,13 @@ function App() {
                 <div className="flex-col footer-address">
                   <div className="footer-address-inner">
                     <p>
-                      <strong>Head Office</strong>
+                      <strong>Headquarters</strong>
                       <br />
-                      Royalty House,
+                      Saigon Pearl Complex,
                       <br />
-                      72-74 Dean Street,
+                      No. 15, D2 Street,
                       <br />
-                      London,
-                      <br />
-                      W1D, 3SG
+                      Ward 22, Binh Thanh District, Ho Chi Minh City
                     </p>
                   </div>
                 </div>
